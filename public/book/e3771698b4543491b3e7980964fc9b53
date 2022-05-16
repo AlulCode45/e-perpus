@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ARHDA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-09 06:43:44 PM"/>
+        <attribute name="created" value="QVJIREE7QVJIREE7MjAyMi0wNS0wOTswODowODoyMSBBTTsxOTcy"/>
+        <attribute name="edited" value="QVJIREE7QVJIREE7MjAyMi0wNS0wOTswOToxMTowMCBBTTsyOzIwNzM="/>
+        <attribute name="edited" value="Tm90ZWJvb2s7VVNFUjsyMDIyLTA1LTA5OyIwOTo0OToyNSAiOzE7MjQ2NA=="/>
+        <attribute name="edited" value="YWx1bGdhbnM7REVGQVVMVC1ST1VURS1HOzIwMjItMDUtMDk7MDY6NDM6NDQgUE07NDszMzI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="hasil" type="Integer" array="False" size=""/>
+            <declare name="pilihan" type="String" array="False" size=""/>
+            <output expression="&quot;pilih pilihan &quot;" newline="True"/>
+            <output expression="&quot;1. menjadi mahasiswa unitomo &quot;" newline="True"/>
+            <output expression="&quot;2.mengambil uang atm (anjungan tunai madiri)&quot;" newline="True"/>
+            <output expression="&quot; 3. mengganti ban bocor &quot;" newline="False"/>
+            <input variable="hasil"/>
+            <if expression="hasil=1">
+                <then>
+                    <output expression="&quot; apakah ingin menjadi mahasiswa unitomo ?(Y atau N )&quot;" newline="True"/>
+                    <input variable="pilihan"/>
+                    <if expression="pilihan=&quot;Y&quot; or pilihan=&quot;y&quot;">
+                        <then>
+                            <output expression="&quot;silahkan mendaftar di ruang pendaftaran&#13;&#10; &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan=&quot;N&quot; or pilihan=&quot;n&quot;">
+                                <then>
+                                    <output expression="&quot;perintah yang anda masukkan yes&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Masukan jawaban yang benar&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="hasil=2">
+                        <then>
+                            <output expression="&quot;mengambil uang atm (Y atau N )&quot;" newline="True"/>
+                            <input variable="pilihan"/>
+                            <if expression="pilihan=&quot;Y&quot; or pilihan=&quot;y&quot;">
+                                <then>
+                                    <output expression="&quot;Selamat uang anda telah keluar&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan=&quot;N&quot; or pilihan=&quot;n&quot;">
+                                        <then>
+                                            <output expression="&quot;perintah yang anda masukkan yes&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Masukan jawaban yang benar&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="hasil=3">
+                                <then>
+                                    <output expression="&quot;Apakah ingin mengganti ban bocor ( Y / N )&quot;" newline="True"/>
+                                    <input variable="pilihan"/>
+                                    <if expression="pilihan=&quot;Y&quot; or pilihan=&quot;y&quot;">
+                                        <then>
+                                            <output expression="&quot;Selamat ban anda sudah normal selamat berkendara&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="pilihan=&quot;N&quot; or pilihan=&quot;n&quot;">
+                                                <then>
+                                                    <output expression="&quot;perintah yang anda masukkan yes&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Masukan jawaban yang benar&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;perintah yang anda masukkan salah&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
